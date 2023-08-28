@@ -1,0 +1,10 @@
+#Write a program that determines the type of a triangle (equilateral, isosceles, or scalene) based on its side lengths using if-else statements.
+a=int(input("Enter The  1st Number :")) 
+b=int(input("Enter The  2nd Number :")) 
+c=int(input("ENter The 3rd Number :"))
+if(a == b ==c):
+    print("Equilateral")
+elif(a== b or a==c or b==c):
+    print("Isosceles")
+else:
+    print("Scalene")
