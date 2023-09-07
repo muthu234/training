@@ -1,0 +1,197 @@
+.r2{
+    background-color: #FF8B7D;
+    height: 80px;
+    margin: 5px 5px;
+}
+.r1c1{
+    background-color: #008080;
+    height: 80px;
+    text-align: center;
+    
+}
+.r1c2{
+    background-color: #FF8B7D;
+    height: 80px;
+}
+.r1c2c1{
+    background-color: cadetblue;
+    height: 80px;
+    text-align: center;
+    padding: 30px;
+}
+.r1c2c2{
+    background-color: chocolate;
+    height: 80px;
+    text-align: center;
+    padding: 30px;
+}
+.r3{
+    height: 80px;
+    margin: 5px 5px;
+}
+.r3c1{
+    background-color: #00FFFF;
+    height: 80px;
+}
+.r3c2{
+    background-color:#6495ED;
+    height: 80px;
+}
+.r3c3{
+    background-color:#9370DB;
+    height: 80px;
+}
+.r3c4{
+ background-color:#008080;
+    height: 80px;
+}
+.r4{
+    background-color:#C1FFC1;
+    height: 80px;
+    margin: 5px 5px;
+
+}
+.r5{
+    background-color:#39CCCC;
+    height: 80px;
+    margin: 5px 5px;
+
+}
+.r5c1{
+    background-color:coral;
+    height: 80px;}
+.r5c2
+{
+    background-color:red;
+    height: 80px;
+}
+.r5c3
+{
+    background-color: blue;
+    height: 80px;
+}
+.r6
+{
+    background-color: darkgoldenrod;
+    height: 80px;
+    margin: 5px 5px;
+}
+.r6c1
+{
+background-color: crimson;
+height: 80px;
+}
+.r6c2
+{
+background-color: darkgray;
+height: 80px;
+}
+.r7
+{
+    background-color: darkgreen;
+    height: 80px;
+    margin: 5px 5px;
+}
+.r7c1
+{
+background-color: darkkhaki;
+height: 80px;
+}
+.r7c2
+{
+background-color: darkmagenta;
+height: 80px;
+}
+.r8{
+    background-color: darksalmon;
+    height: 80px;
+    margin: 5px 5px;
+}
+.r8c1
+{
+background-color: darkorange;
+height: 80px;
+}
+.r8c2
+{
+background-color: darksalmon;
+height: 80px;
+}
+
+.r9{
+    background-color: darkslateblue;
+    height: 80px;
+    margin: 5px 5px;
+}
+.r9c1
+{
+background-color: darkslategray;
+height: 80px;
+}
+.r9c2
+{
+background-color: deeppink;
+height: 80px;
+}
+.r10
+{
+    background-color: gold;
+    height: 80px;
+    margin: 5px 5px;   
+}
+.r11{
+    /* background-color: springgreen; */
+    height: 80px;
+    margin: 5px 5px;   
+}
+.r11c1
+{
+ background-color: springgreen;
+ height: 80px;
+}
+.r11c2
+{
+    background-color: hsla(244, 66%, 55%, 0.822);
+    height: 80px;
+}
+.r12c1
+{
+    background-color: yellowgreen;
+    height: 80px;
+}
+.r12c2
+{
+    background-color: violet;
+    height: 80px;
+}
+.r12c3
+{
+    background-color: turquoise;
+    height: 80px;
+}
+.r12c4
+{
+    background-color: sienna;
+    height: 80px;
+}
+.r13
+{
+    height: 80px;
+    margin: 5px 5px;
+}
+.r13c1
+{
+    background-color: orange ;
+    height: 80px;
+}
+.r13c2
+{
+    background-color: tomato;
+    height:80px ;
+}
+.h6{
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-size: 12em;
+    background-color: white;
+}
+
