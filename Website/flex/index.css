@@ -182,5 +182,21 @@ p
 {
     flex-shrink: 5;
 }
+.basic
+{
+    flex-basis:rem;
+}
+#self1
+{
+    align-self: flex-end;
 
+}
+#self2
+{
+    align-self: flex-center;
+}
+#self3
+{
+    align-self:flex-start;
+}
 
