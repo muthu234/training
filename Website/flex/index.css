@@ -4,7 +4,8 @@
     display: flex;
     background-color:lightblue;
     padding: 20px;
-    outline: 20px;
+    outline-color: rgb(241, 226, 5);
+    outline-style: dashed;
     margin: 10px 10px;
 }
 p
@@ -57,6 +58,7 @@ p
 .flex-start
 {
     justify-content: flex-start;
+    color: ;
 }
 .flex-end
 {
@@ -78,3 +80,107 @@ p
 {
     justify-content: space-evenly;
 }
+.start
+{
+    align-items: flex-start;
+}
+.end
+{
+    align-items: flex-end;
+}
+.center
+{
+    align-items: center;
+}
+.stretch
+{
+    
+    align-items:stretch;
+}
+.baseline
+{
+    align-items:  baseline;
+}
+#base
+{
+    font-size :50px;
+    text-align: left;
+}
+.aspace-between
+{
+    align-content: space-between;
+}
+#astretch
+{
+    width: 10px;
+    align-content: stretch;
+}
+.acenter
+{
+    align-content: center;
+}
+.astart
+{
+    align-content: start;
+}
+.aend
+{
+    align-content: end;
+}
+.gap
+{
+    display: flex;
+    /* gap = 10px 20px To assign 10px is row and 20px is column*/
+    gap: 10px 20px;
+    background-color:lightblue;
+    padding: 20px;
+    outline-color: rgb(241, 226, 5);
+    outline-style: dashed;
+    margin: 10px 10px;
+}
+.ord2{
+    order: -1;
+}
+.ord1{
+    order:3;
+}
+.ord3{
+    order: -2;
+}
+.ord4{
+    order:1;
+} 
+.grow2{
+    flex-grow: 5;
+}
+/* .grow1{
+    order:3;
+}
+.grow3{
+    order: -2;
+}
+.grow4{
+    order:1;
+} */ 
+.shrink1
+{
+    flex-shrink: 3;
+}
+.shrink2
+{
+    flex-shrink: 2;
+}
+.shrink3
+{
+    flex-shrink: 1;
+}
+.shrink4
+{
+    flex-shrink: 4;
+}
+.shrink5
+{
+    flex-shrink: 5;
+}
+
+
