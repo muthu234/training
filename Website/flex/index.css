@@ -1,0 +1,42 @@
+body
+{
+    background-color:#FF91A4;
+
+}
+.container
+{
+    display: flex;
+    background-color: blue;
+    padding: 20px;
+    outline: 20px;
+    margin: 10px 10px;
+}
+p
+{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 240);
+    height: 40px;
+    width: 150px;
+    margin: 50px;
+}
+.h1
+{
+    color:#000;
+    font-family:cursive;
+}
+.flex-row
+{
+    flex-direction: row;
+}
+.flex-col
+{
+    flex-direction: column;
+}
+.flex-row-rev{
+    flex-direction: row-reverse;
+}
+.flex-col-rev
+{
+    flex-direction: column-reverse;
+}
