@@ -1,12 +1,8 @@
-body
-{
-    background-color:#FF91A4;
 
-}
 .container
 {
     display: flex;
-    background-color: blue;
+    background-color:lightblue;
     padding: 20px;
     outline: 20px;
     margin: 10px 10px;
@@ -15,15 +11,16 @@ p
 {
     text-align: center;
     padding: 20px;
-    background-color: rgb(255, 255, 240);
+    background-color: indianred;
     height: 40px;
     width: 150px;
     margin: 50px;
+    font-size: 30px;
 }
 .h1
 {
     color:#000;
-    font-family:cursive;
+    
 }
 .flex-row
 {
@@ -39,4 +36,45 @@ p
 .flex-col-rev
 {
     flex-direction: column-reverse;
+}
+.flex-wrap
+{
+    flex-wrap:wrap;
+}
+.flex-no-wrap
+{
+    flex-wrap: nowrap;
+}
+.flex-wrap-rev
+{
+    flex-wrap: wrap-reverse;
+}
+/*  flex-direction and flex-wrap properties using flex flow*/
+.flex-flow
+{
+    flex-flow:row;
+}
+.flex-start
+{
+    justify-content: flex-start;
+}
+.flex-end
+{
+    justify-content: flex-end;
+}
+.flex-center
+{
+    justify-content: flex-center;
+}
+.space-between
+{
+    justify-content: space-between;
+}
+.space-around
+{
+    justify-content: space-around;
+}
+.space-evenly
+{
+    justify-content: space-evenly;
 }
