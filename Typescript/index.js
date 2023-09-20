@@ -1,3 +1,7 @@
+// create config json => tsc -init
+// watch mode particular folder => tsc -w
+// watch mode particular file  => tsc file name.ts -w
+// watch mode for separate folder for js file  => tsc filename.ts -w -outdir foldername
 // let a=1
 //  let a='hello'
 //  console.log(a);
@@ -79,7 +83,78 @@
 // };
 // console.log(a.name);
 // create arrays
-var a = [];
-a.push('hello', 'world');
-console.log(a);
-console.log(a[0]);
+// let a:string[]=[];
+// a.push('hello','world');
+// console.log(a);
+// console.log(a[0]);
+// create array of object
+// var a:{
+//     name:string,
+//     age:number //type annotation
+// }[];
+// a=[{
+//     name:'muthu',age:20
+// },{
+//     name:'kumar',age:25 //Type inference
+// },{
+//     name:'sasti',age:24 
+// }];
+// console.log(a[0].name,a[1].age);
+// fliter by using array of object
+// var fil=a.filter(e=>
+//     {
+//         if (e.age >20)
+//         {
+//             console.log(e.name);
+//         }
+//     })
+// var fil2=a.filter(e => {
+//     if(e.age>20){
+//         return e;
+//     }
+// });
+// fil2.forEach(e => {
+//     console.log(e.name);
+// })
+// console.log(fil2[0].name);
+// normal function with return  datatype
+// let a:number,b:number;
+// function fn(a:number=10,b:number=30):number{
+//     return a+b 
+// }
+// console.log(fn(10,20));
+// optional argument using function
+// function fn(a:number,b:number,c?:number):number
+// {
+//     if (typeof c!='undefined')
+//     {
+//         return a*b*c
+//     }
+//     return a*b
+// }
+// console.log(fn(10,2));
+// optional argument using  arrow function & return Type
+// var a=(a:number,b:number,c?:number):number =>
+// {
+//         if (typeof c!='undefined')
+//         {
+//             return a*b*c
+//         }
+//         return a*b
+//     }
+// console.log(a(10,2));
+// default value using function & return Type
+// function val(a:number,b:number,c:number):number{
+//     return a+b+c
+// }
+// console.log(val(2,2,3));
+// dynamic number of parameter (...) => to use multiple values
+// function fn(a:number,b:number,...rest:number[]):number{
+//     return a+b+rest.reduce((p,c)=> p+c,-1)
+// }
+// console.log(fn(3,3,3,3,3,3));
+// annoymus function
+var fn = function (a, b, c) {
+    return a / b * c;
+};
+console.log(fn(10, 2, 2));
