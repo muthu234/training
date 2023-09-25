@@ -1,0 +1,18 @@
+body
+{
+    background-color:#ffffff;
+}
+.square
+{
+    border-radius: 35px;
+    height: 750px;
+    width: 400px;
+    background-color: #e3b88d;
+}
+.square1
+{
+    border-radius: 35px;
+    height: 75px;
+    width: 400px;
+    background-color:red;
+}
