@@ -1,18 +1,37 @@
 body
 {
-    background-color:#ffffff;
+    height: 100vh;
+    background-color:#30f5d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+div
+{
+    border-radius:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .square
-{
-    border-radius: 35px;
-    height: 750px;
+{  
+    height: 850px;
     width: 400px;
     background-color: #e3b88d;
 }
-.square1
+#org
 {
-    border-radius: 35px;
-    height: 75px;
-    width: 400px;
-    background-color:red;
+    height: 950px;
+    width: 600px;
+    background-color: #FFFFFF;
+    /* background-color: #6c7469; outside */
+    /* background-color: #eeeeec; inside white */
+}
+#we
+{
+    display: flex;
+    background-color: #eeeeec;
+    height: 250px;
+    width: 350px;
 }
