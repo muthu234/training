@@ -6,6 +6,7 @@ body
     align-items: center;
     justify-content: center;
     margin: 0px;
+    outline-color:#333;
 }
 div
 {
@@ -13,13 +14,19 @@ div
     display: flex;
     align-items: center;
     justify-content: center;
+    outline:5px solid #333;
 }
 .square
 {  
     height: 850px;
     width: 400px;
     background-color: #e3b88d;
+    display: flex;
+    align-items:flex-start;
+    padding: 20px 10px;
+    
 }
+    
 #org
 {
     height: 950px;
@@ -30,8 +37,19 @@ div
 }
 #we
 {
-    display: flex;
     background-color: #eeeeec;
-    height: 250px;
+    height: 150px;
     width: 350px;
+    display: flex;
+    align-items: flex-end;
+    padding:20px 10px ;
 }
+.inside
+{
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    outline: none;
+    border-radius:0px;
+}
+
