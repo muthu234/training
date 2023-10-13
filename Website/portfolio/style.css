@@ -28,6 +28,9 @@ body
     color: #fff;
     text-decoration: none;
     font-weight: 600;
+    cursor:default;
+    opacity: 0;
+    animation:slideRight 1s ease forwards ;
 }
 .navbar a
 {
@@ -37,7 +40,9 @@ body
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
-    transition: .3s ;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
 }
 .navbar a:hover
 {
@@ -67,14 +72,31 @@ body
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
+    opacity: 0;
+    animation: slideButtom 1s ease forwards;
+    animation-delay:  .7s;
 } 
+.home-content h3 span {
+    color: #0ef;
+}
+.home-content h3:nth-of-type(2)
+{
+    margin-bottom: 30px;
+}
 .home-content h1{
     font-size: 56px;
     font-weight: 700px;
     margin: -3px 0;
+    opacity: 0;
+    animation:slideRight 1s ease forwards;
+    animation-delay :1s;
 }
 .home-content p{
     font-size: 20px;
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: 1s;
+
 }
 .home-sci a
 {
@@ -116,6 +138,69 @@ body
     0 0 25px cyan,0 0 50px cyan,
     0 0 100px cyan,0 0 200px cyan 
 }
+@keyframes slideRight{
+    0%
+    {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideleft{
+    0%
+    {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideButtom{
+    0%
+    {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideButtom{
+    0%
+    {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
 
 
 
