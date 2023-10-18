@@ -1,0 +1,11 @@
+<!-- property Bindings -->
+<p [style.color]="setcolor" >Hello</p>
+<!-- <input type="text" > -->
+
+
+<!-- Dynamic Change color -->
+<input type="text" #idr  >
+<button (click)='change(idr.value)'>Submit</button>
+
+<p [style.color]="col">two way binding</p>
+<input type="text" [(ngModel)]="col"> // 
