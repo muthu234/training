@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,Input} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  setcolor='blue';//property Bindings
-  
+  // nam:string='murgan'
+  show=true 
+  setcolor='blue';
+  item=['kumar','surya']
   title = 'new1';
   col='red'
   change(color:string){

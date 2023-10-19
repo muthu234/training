@@ -12,5 +12,4 @@ export class MycomComponent {
     // console.log("Hello My fun"); 
   }
 m:boolean=false;
-
 }

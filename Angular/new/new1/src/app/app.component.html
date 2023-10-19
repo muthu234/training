@@ -1,11 +1,22 @@
-<!-- property Bindings -->
-<p [style.color]="setcolor" >Hello</p>
-<!-- <input type="text" > -->
-
-
-<!-- Dynamic Change color -->
-<input type="text" #idr  >
-<button (click)='change(idr.value)'>Submit</button>
-
-<p [style.color]="col">two way binding</p>
-<input type="text" [(ngModel)]="col"> // 
+<!-- property Bindings
+    <p [style.color]="setcolor" >Hello</p> -->
+    
+    
+    
+    <!-- Dynamic Change color -->
+    <!-- <input type="text" #idr>
+    <button (click)='change(idr.value)'>Submit</button> -->
+    
+    <!-- two way binding using ngModel -->
+    <!-- <p [style.color]="col">two way binding</p>
+    <input type="text" [(ngModel)]="col">  -->
+    <!-- interpolation=> its TS convert to  html  -->
+    <!-- ---------------if and else -->
+    <!-- <p *ngIf="show">
+        Artificial Intelligence, defined in simple terms | HCLTech
+        Artificial intelligence is the science of making machines that can think like humans. </p>
+        <p *ngIf="show;else #text">Artificial Intelligence, defined in simple terms | HCLTech
+            Artificial intelligence is the science of making machines that can think like humans.</p>
+            <ng-template text> </ng-template> 
+            --------------->
+        

@@ -1,10 +1,20 @@
-<div>{{name}}
+<!-- <div>{{name}}
 <input type="text" [(ngModel)]='name'> 
 <input type="text" [value]="name">
 <button (click)="myfun()">submit</button>
-</div>
+</div> -->
 <!-- {{name}}Interpolation -->
 <!-- [(ngModel)] two way binding -->
 <!-- event binding=>both input and button work -->
 <!-- property binding=>only input without any function -ex=<input type="text" [value]="name">
  <button (click)="myfun()">submit</button> -->
+<div>
+    <!-- <p *ngIf="show">hello</p>  -->
+    <!-- <ul *ngFor="let emp of emps; index as i">
+        <li>{{i+1}}:{{emp}}</li>
+    </ul> -->
+    <!-- <input type="text" Firstname> -->
+    <p *ngIf="show; else mytext">only input without any function
+    </p>
+    <ng-template #mytext >hello world</ng-template>
+</div>
