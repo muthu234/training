@@ -11,6 +11,6 @@ export class MycomComponent {
     console.log(this.a);
     // console.log("Hello My fun"); 
   }
-m:boolean=true;
+m:boolean=false;
 
 }
