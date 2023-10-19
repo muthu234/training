@@ -1,0 +1,19 @@
+<!-- property bindings-->
+<input type="number"[value]='a'>
+<p>mycom works!</p> 
+
+ 
+ <!-- Event bindings -->
+<input type="number"[value]='a'>
+<p>mycom works!</p>
+<!-- <button (click)="myFun()">Sumbit</button>  -->
+
+<!-- Ng Module-->
+<input type="number"[(ngModel)]="a"#in>
+<button (click)="myFun(in.value)">Sumbit</button>
+
+<!-- ngIF -->
+<p *ngIf="m">Lorem ipsum dolor sit amet consectetur 
+</p>
+
+
