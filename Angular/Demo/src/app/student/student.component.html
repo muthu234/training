@@ -1,4 +1,17 @@
 <ul *ngFor="let item of student">
     <li>{{item.name}}</li>
 </ul>
-{{toDo| json}} //step 7
+{{toDo| json}} <!--step 7 -->
+<table>
+    <tr>
+        <th>RegNo</th>
+        <th>Name</th>
+        <th>Department</th>
+    </tr>
+    <tr *ngFor="let e of a">
+        <td>{{e.id}}</td>
+        <td>{{e.RegNo}}</td>
+        <td>{{e.Name}}</td>
+        <td>{{e.Department}}</td>
+    </tr> 
+</table>
