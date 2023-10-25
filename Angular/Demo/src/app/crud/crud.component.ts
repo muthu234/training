@@ -9,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrudComponent implements OnInit{
   m:any;
+  id:any;
+  name:any;
+  age:any;
+  department:any;
+  a:boolean=false
   constructor(private ser:MyserviceService){}
   ngOnInit(): void {
     this.getall();
     
   }
-  a:boolean=false
   add()
   {
     this.a=!this.a
@@ -26,6 +30,26 @@ export class CrudComponent implements OnInit{
       
     })
   }
+  getByid(){
+    this.ser.getbyid(this.id).subscribe((data)=>{
+      console.log(data);
+    })
+  }
+  createuser()
+  {
+    let user={
+      id:this.id,
+      name:this.name,
+      age:this.age,
+      department:this.department
+    }
+    this.ser.createuser(user).subscribe((data)=>
+    {
+      this.getall();
+    })
+  }
+ 
+  
 
   }
 

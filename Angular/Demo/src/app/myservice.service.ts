@@ -10,6 +10,7 @@ export class ServiceNameService {
 export class MyserviceService {
   // apiUrl:string ='https://jsonplaceholder.typicode.com/todos/1'//step 3
   Url:string ='http://localhost:3000'
+  
 
   constructor(private http:HttpClient) { }  //step:2
 // getToDos(){
@@ -19,13 +20,16 @@ getAll()
 {
   return this.http.get(this.Url+'/getAllUsers')
 }
+getbyid(value:any)
+  {
+    console.log(value);
+    
+    return this.http.get(this.Url+'/getUserById/'+value)
+  }
+  createuser(user:any)
+  {
+    return this.http.post(this.Url+'/createUser/',user)
+  }
 
-//   getStudents(){
-//   return [
-//   {name:'muthu',age:21,RegNO:21504301},
-//   {name:'kumar',age:23,RegNO:21504302},
-//   {name:'mani',age:24,RegNO:21504303},
-//   {name:'vel',age:22,RegNO:21504304},
-// ];
 } 
 

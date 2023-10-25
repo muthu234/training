@@ -7,10 +7,17 @@
 </div>
 <div class="row">
     <div class="col-4 addcol">
-        <div *ngIf="a">
-            <input type="text" placeholder="">
-            <input type="text" placeholder="">
+        <div *ngIf="a" class="addcol1">
+            <!-- <input type="text" placeholder=""[(ngModel)]="id"> Get Getbyid
+            <button (click)="getByid()">Submit</button> -->
+            <label>ID:</label><input type="text" placeholder="Enter Your Id:"[(ngModel)]="id">
+            <label>Name:</label><input type="text" placeholder="Enter Your Name:"[(ngModel)]="name">
+            <label>Age:</label><input type="text" placeholder="Enter Your Age:"[(ngModel)]="age">
+            <label>Department:</label><input type="text" placeholder="Enter Your Department:"[(ngModel)]="department">
+        <button type="button" class="btn btn-success btn"(click)="createuser()">Submit</button>
+
         </div>
+        
     </div>
     <div class="col-4"></div>
     <div class="col-4"></div>
