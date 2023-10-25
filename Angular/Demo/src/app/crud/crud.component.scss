@@ -1,26 +1,25 @@
-p{
-    font-size: medium;
-    color: aqua;
-   }
-.hire{
-    font-size: 28px;
-    font-style:oblique;
-    // color:blue ;
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
 
 }
-td{
-    border: 5px solid blue;
+.btn
+{
+    border-radius: 18px;
+    margin: 20px;
 }
-th{
-    border: 5px solid red;
-}
-table{
-    border-collapse: collapse;
-    
-}
-.hire1{
+.addcol
+{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
+    margin: 20px;
+    gap: 20px;
+}
+.tab{
+    position: absolute;
+    top: 50vh;
+    width: 90%;
+    height: 50px;
+
 }

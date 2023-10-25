@@ -1,22 +1,39 @@
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, blanditiis? Enim, similique eos mollitia dolorem tempore necessitatibus laboriosam alias debitis distinctio labore. Ipsum pariatur, debitis autem minima culpa temporibus eius?</p>
-
-<div class="hire1"><table class="hire">
-    <tr>
-    <th>Id</th>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Department</th>
-    </tr>
-    <tr *ngFor="let item of student">
-        <td>{{item.id}}</td>
-        <td>{{item.name}}</td>
-        <td>{{item.age}}</td>
-        <td>{{item.department}}</td>
-    
-    </tr>
-
-</table>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<h1 style="text-align: center;">CRUD</h1>
+<div class="row">
+    <button type="button" class="btn btn-success btn " (click)="add()">Add</button>
+    <button type="button" class="btn btn-success">Update</button>
+    <button type="button" class="btn btn-success">Delete</button>
 </div>
-<button >hello</button>
+<div class="row">
+    <div class="col-4 addcol">
+        <div *ngIf="a">
+            <input type="text" placeholder="">
+            <input type="text" placeholder="">
+        </div>
+    </div>
+    <div class="col-4"></div>
+    <div class="col-4"></div>
+</div>
+
+
+<table class="table table-striped tab">
+    <thead>
+      <tr class="table-danger">
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Department</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of m">
+            <td>{{e.id}}</td>
+            <td>{{e.name}}</td>
+            <td>{{e.age}}</td>
+            <td>{{e.department}}</td>
+        </tr> 
+      
+    </tbody>
+  </table>
 
