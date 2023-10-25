@@ -1,0 +1,26 @@
+p{
+    font-size: medium;
+    color: aqua;
+   }
+.hire{
+    font-size: 28px;
+    font-style:oblique;
+    // color:blue ;
+
+}
+td{
+    border: 5px solid blue;
+}
+th{
+    border: 5px solid red;
+}
+table{
+    border-collapse: collapse;
+    
+}
+.hire1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

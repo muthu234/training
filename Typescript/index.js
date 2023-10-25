@@ -188,24 +188,22 @@
 // console.log(o.b);
 // console.log(o.c);
 // ---  access private variable(get and set) method --private variable assign => _variable name(ex=>_a)
-var myclass = /** @class */ (function () {
-    function myclass() {
-        this._val = "20";
-    }
-    Object.defineProperty(myclass.prototype, "val", {
-        get: function () {
-            console.log("hello");
-            return this._val;
-        },
-        set: function (a) {
-            this._val = a;
-        },
-        enumerable: false,
-        configurable: true
-    });
-    return myclass;
-}());
-var o = new myclass();
-var a = "50";
-console.log(o.val);
-console.log(a);
+// class myclass{
+//     _val:string="20"
+//     get val():string{
+//         // console.log("hello");
+//         return this._val
+//     }
+//     set val(a:string){
+//          this._val=a;
+// }
+// }
+// let o=new myclass()
+//  let a="50"
+// console.log(o.val);
+// console.log(a);
+var message;
+message = 'abce';
+var end = message.endsWith('c');
+var end1 = message.endsWith('c');
+console.log(end1);

@@ -5,11 +5,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./mycom.component.scss']
 })
 export class MycomComponent {
-  a:number=100;
-  myFun(b:string){
-    this.a=Number(b);
+  b=['muthu','vel','kumar'];
+  a:number=11;
+  myFun(a:number){
+    // this.a=Number(b);
     console.log(this.a);
-    // console.log("Hello My fun"); 
+    console.log("Hello My fun"); 
   }
-m:boolean=false;
+m:boolean=true;
 }

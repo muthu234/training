@@ -194,20 +194,27 @@
 // console.log(o.b);
 // console.log(o.c);
 // ---  access private variable(get and set) method --private variable assign => _variable name(ex=>_a)
-class myclass{
-    _val:string="20"
-    get val():string{
-        // console.log("hello");
-        return this._val
-    }
-    set val(a:string){
-         this._val=a;
-}
-}
-let o=new myclass()
- let a="50"
-console.log(o.val);
-console.log(a);
+// class myclass{
+//     _val:string="20"
+//     get val():string{
+//         // console.log("hello");
+//         return this._val
+//     }
+//     set val(a:string){
+//          this._val=a;
+// }
+// }
+// let o=new myclass()
+//  let a="50"
+// console.log(o.val);
+// console.log(a);
+let message;
+message='abce';
+let end=(<string>message).endsWith('c');
+let end1=(message as string).endsWith('c');
+
+console.log(end1);
+
 
 
     

@@ -9,7 +9,7 @@
 
 <!-- Ng Module -->
 <input type="number"[(ngModel)]="a"#in>
-<button (click)="myFun(in.value)">Sumbit</button>
+<button (click)="myFun(a)">Sumbit</button>
 
 <!-- ngIF -->
 <p *ngIf="m">Lorem ipsum dolor sit amet consectetur 
@@ -20,4 +20,7 @@
 <ng-template #text>Alternate</ng-template>
 <p></p>
 <div class="col">hello</div>
+<!-- Ng For using arry-->
+<p *ngFor="let b of b">{{b}}</p>
+
 

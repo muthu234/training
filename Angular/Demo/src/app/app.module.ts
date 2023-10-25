@@ -7,23 +7,28 @@ import { FormsModule } from '@angular/forms';
 import { StudentComponent } from './student/student.component';
 import { MyserviceService } from './myservice.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CrudComponent } from './crud/crud.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MycomComponent,
-    StudentComponent
+    StudentComponent,
+    CrudComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule //step:6
+    HttpClientModule, //step:6
   
 
   ],
   providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  a:number=10;
+ }
