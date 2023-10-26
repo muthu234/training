@@ -8,6 +8,7 @@ import { StudentComponent } from './student/student.component';
 import { MyserviceService } from './myservice.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CrudComponent } from './crud/crud.component';
+import { FormComponent } from './form/form.component';
 
 
 
@@ -16,7 +17,8 @@ import { CrudComponent } from './crud/crud.component';
     AppComponent,
     MycomComponent,
     StudentComponent,
-    CrudComponent
+    CrudComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

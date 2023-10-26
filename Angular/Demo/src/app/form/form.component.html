@@ -1,0 +1,24 @@
+<form #form="ngForm">
+    {{form.value|json}}
+    {{user | json}}
+    <div class="form-group">
+        <label for="id1" class="form-label">FirstName</label>
+        <input type="text"   required #f1="ngModel" class="form-control" name="firstname"id="id1" [(ngModel)]="user.firstname">
+        Dirty:{{f1.dirty}} <!-- modify-->
+        Pristine:{{f1.pristine}}<!-- only touch Not Modify-->
+       Touched: {{f1.touched}}
+        Untouched:{{f1.untouched}}
+        Valid: {{f1.valid}}
+        Invalid:{{f1.invalid}}<!--empty-->
+        <p *ngIf="f1.invalid && f1.touched" class="text-danger">firstname is required</p>
+        
+<button (click)="sub()">SUBMIT</button>
+
+        
+   </div>
+    <div class="form-group">
+        <label for="id2" class="form-label">Last Name</label>
+        <input type="text" class="form-control" name="lastname" [(ngModel)]="user.lastname" id="id2">
+    </div>
+    
+</form>
