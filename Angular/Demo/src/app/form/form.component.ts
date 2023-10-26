@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
- user=new User('muthu','mariappan')
+ user=new User('','','',true,'')
  sub(){
   console.log(this.user);
-  
  }
+ 
 }
