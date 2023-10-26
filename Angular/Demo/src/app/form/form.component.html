@@ -15,7 +15,7 @@
    </div>
     <div class="form-group">
         <label for="id2" class="form-label">Last Name</label>
-        <input type="text"  required #ln="ngModel" class="form-control" name="lastname" [(ngModel)]="user.lastname" id="id2">
+        <input type="text"  required #ln="ngModel" class="form-control" name="lastname" [(ngModel)]="user.lastname" id="id2" [class.is-invalid]="ln.touched && ln.invalid">
         <p *ngIf="ln.touched && ln.invalid" class="text-danger"> Please Enter Your Lastname</p>
     </div>
     <div>
