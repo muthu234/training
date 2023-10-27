@@ -4,9 +4,11 @@
     margin: 10px;
 }
 .btn
-{
+{   background-color:#95DABB;
     border-radius: 18px;
     margin: 10px;
+    color: red;
+
 }
 .addcol
 {
@@ -15,10 +17,8 @@
     
 }
 .tab{
-    position: absolute;
+  flex-direction: column;
     top: 550px;
-    width: 90%;
-    height: 50px;
     border: 3px solid black;
     border-collapse: collapse;
 }
@@ -26,6 +26,12 @@
 {
     border: 3px solid black;
     border-collapse: collapse;
-    height: 255px;
     width: 225px;
+    border-radius: 8px;
 }
+table {
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  
