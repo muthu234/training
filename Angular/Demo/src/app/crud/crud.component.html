@@ -2,32 +2,45 @@
 <h1 style="text-align: center;">CRUD</h1>
 <div class="row">
     <button type="button" class="btn btn-success btn " (click)="add()">Add</button>
-    <button type="button" class="btn btn-success">Update</button>
-    <button type="button" class="btn btn-success">Delete</button>
+    <button type="button" class="btn btn-success"(click)="udate()">Update</button>
+    <button type="button" class="btn btn-success" (click)="de()">Delete</button> 
 </div>
+<!--Create User-->
 <div class="row">
     <div class="col-4 addcol">
         <div *ngIf="a" class="addcol1">
-            <!-- <input type="text" placeholder=""[(ngModel)]="id"> Get Getbyid
+            <!-- <input type="text" placeholder=""[(ngModel)]="regno"> Get Getbyid
             <button (click)="getByid()">Submit</button> -->
-            <label>ID:</label><input type="text" placeholder="Enter Your Id:"[(ngModel)]="id">
+            <label>RegNo:</label><input type="text" placeholder="Enter Your RegNo"[(ngModel)]="regno">
             <label>Name:</label><input type="text" placeholder="Enter Your Name:"[(ngModel)]="name">
             <label>Age:</label><input type="text" placeholder="Enter Your Age:"[(ngModel)]="age">
             <label>Department:</label><input type="text" placeholder="Enter Your Department:"[(ngModel)]="department">
-        <button type="button" class="btn btn-success btn"(click)="createuser()">Submit</button>
+            <button type="button" class="btn btn-success btn"(click)="createuser()">Submit</button>        
+        </div> 
+    </div>
+    <div class="col-4">
+        <!--Update-->
+        <div  *ngIf="u" class="addcol1">
+            <label>RegNo:</label><input type="text" placeholder="Enter Your RegNo:"[(ngModel)]="regno">
+            <label>Name:</label><input type="text" placeholder="Enter Your Name:"[(ngModel)]="get_name">
+            <label>Age:</label><input type="text" placeholder="Enter Your Age:"[(ngModel)]="get_age">
+            <label>Department:</label><input type="text" placeholder="Enter Your Department:"[(ngModel)]="get_department">
+            <button type="button" class="btn btn-success btn"(click)="getByid()">Update</button> 
+            <button type="button" class="btn btn-success btn"(click)="update()">Submit</button>        
 
         </div>
-        
+    </div> 
+    <div class="col-4">
+        <div  *ngIf="d" class="addcol1">
+            <label>RegNo:</label><input type="text" placeholder="Enter Your RegNo:"[(ngModel)]="regno">
+            <button type="button" class="btn btn-success btn"(click)="del()">Delete</button>        
+        </div>
     </div>
-    <div class="col-4"></div>
-    <div class="col-4"></div>
-</div>
-
-
+</div> 
 <table class="table table-striped tab">
     <thead>
       <tr class="table-danger">
-        <th scope="col">Id</th>
+        <th scope="col">Regno</th>
         <th scope="col">Name</th>
         <th scope="col">Age</th>
         <th scope="col">Department</th>
@@ -35,7 +48,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let e of m">
-            <td>{{e.id}}</td>
+            <td>{{e.regno}}</td>
             <td>{{e.name}}</td>
             <td>{{e.age}}</td>
             <td>{{e.department}}</td>

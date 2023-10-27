@@ -9,11 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrudComponent implements OnInit{
   m:any;
-  id:any;
+  regno:any;
+  uid:any;
   name:any;
   age:any;
+  did:any;
+  d:any;
   department:any;
   a:boolean=false
+  u:boolean=false
+  get_id!:any;
+  get_data:any;
+  get_name:any;
+  get_age:any;
+  get_department:any;
   constructor(private ser:MyserviceService){}
   ngOnInit(): void {
     this.getall();
@@ -23,22 +32,35 @@ export class CrudComponent implements OnInit{
   {
     this.a=!this.a
   }
+  udate()
+  {
+    this.u=!this.u
+  }
+  de(){
+    this.d=!this.d
+  }
   getall(){
     this.ser.getAll().subscribe((data)=>{
       this.m=data;
-      console.log(this.m);
+      // console.log(this.m);
       
     })
   }
   getByid(){
-    this.ser.getbyid(this.id).subscribe((data)=>{
+    console.log(this.regno);
+    this.ser.getbyid(this.regno).subscribe((data)=>{
       console.log(data);
+      this.get_data=data;
+     this.get_name=this.get_data[0].name;
+     this.get_age=this.get_data[0].age;
+     this.get_department=this.get_data[0].department;
+    //  console.log(this.name);
     })
   }
   createuser()
   {
     let user={
-      id:this.id,
+      regno:this.regno,
       name:this.name,
       age:this.age,
       department:this.department
@@ -47,6 +69,24 @@ export class CrudComponent implements OnInit{
     {
       this.getall();
     })
+  }
+  update(){
+    let user={
+      regno:this.regno,
+      name:this.get_name,
+      age:this.get_age,
+      department:this.get_department
+    }
+    this.ser.update(user).subscribe((data)=>
+    {
+      this.getall();
+    });
+  }
+  del(){
+      this.ser.del(this.regno).subscribe((data)=>
+      {
+        this.getall();
+      });
   }
  
   

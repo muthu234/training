@@ -3,7 +3,7 @@
     {{user | json}}
     <div class="form-group">
         <label for="id1" class="form-label">FirstName</label>
-        <input type="text" required #fn="ngModel" class="form-control" name="firstname"id="id1" [(ngModel)]="user.firstname">
+        <input type="text" required #fn="ngModel" class="form-control" name="firstname"id="id1" [(ngModel)]="user.firstname" [class.is-invalid]="fn.invalid && fn.touched">
         <!-- Dirty:{{f1.dirty}} ---- modify
         Pristine:{{f1.pristine}} ---- only touch Not Modify
        Touched: {{f1.touched}}
@@ -20,17 +20,17 @@
     </div>
     <div>
         <label>Select Your Department</label>
-        <select class="form-select" aria-label="Default select example" name="department" required #dept="ngModel" [(ngModel)]="user.department">
+        <select class="form-select" aria-label="Default select example" name="department" required #dept="ngModel" [(ngModel)]="user.department"[class.is-invalid]="dept.invalid && dept.touched">
             <!-- <option selected>Select Your Department</option> -->
             <option value="Mechanical">Mechanical</option>
             <option value="Automobile">Automobile</option>
             <option value="Computer">Computer</option>
           </select>  
-          <p *ngIf="dept.touched && dept.invalid" class="text-danger">Please Enter Your Department</p>  
+          <p *ngIf="dept.touched&& dept.invalid" class="text-danger">Please Enter Your Department</p>  
     </div>
     <label>Select Your Gender</label>
     <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="Gender" required #gender="ngModel" [(ngModel)]="user.gender">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="Gender" required #gender="ngModel" [(ngModel)]="user.gender"[class.is-invalid]="gender.invalid && gender.touched">
         <label class="form-check-label" for="flexRadioDefault1">Male
         </label>
         <p *ngIf="gender.touched && gender.invalid" class="text-danger">Department is required </p>  
@@ -42,7 +42,8 @@
         </label>
       </div>  
       <div>
-        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">Accept terms and conditions
+        <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." name="agree" required #agree="ngModel"[(ngModel)]="user.agree"[class.is-invalid]="agree.touched && agree.invalid" >Accept terms and conditions
+        <p *ngIf="agree.touched && agree.invalid" class="text-danger">click This Fields</p>
       </div> 
       <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
       <label class="btn btn-outline-danger" for="danger-outlined">submit</label>
