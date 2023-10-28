@@ -3,8 +3,8 @@ export class User {
         public firstname:string,
         public lastname:string,
         public department:string,
-        public gender:boolean,
-        public agree:string
+        public gender:string,
+        public agree:boolean
         ){}
        
    

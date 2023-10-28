@@ -7,9 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
- user=new User('','','',true,'')
+ user=new User('','','','',false)
+ a:boolean=false;
  sub(){
   console.log(this.user);
+ }
+ Validate(){
+  this.a=true;
  }
  
 }
