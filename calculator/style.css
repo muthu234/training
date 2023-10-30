@@ -17,40 +17,43 @@ body
     padding: 10px 10px;
     border-radius:35px;
     outline:5px solid #333;
-   
 }
 #cal-body {
     width: 500px;
     border-radius: 35px;
     background: #dde1e7;
     box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
-    padding: 45px;
-    
-    
+    padding: 45px; 
   }
-  
-  .input input {
+.display input {
     height: 100px;
     width: 80%;
     border-radius: 10px;
-    background: #dde1e7;
+    background:skyblue;
     box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
     border: 0;
-    color: rgb(116, 116, 116);
+    /* color: rgb(116, 116, 116); */
     font-size: 2.5rem;
     padding: 0 30px;
   }
-  
-  .input input:focus {
-    outline: none;
-    background: #dde1e7;
-    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+.display input {
+    /* outline: none; */
+      box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
   }
-  
-  .buttons button {
+.buttons button:focus {
+     box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+  } 
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+  }
+  button{
+    height:8vh;
+    width: 22%;
+    margin: 5px;
     cursor: pointer;
-    height: 80px;
-    width: 80px;
     border: 0;
     font-size: 2.5rem;
     border-radius: 50px;
@@ -58,16 +61,8 @@ body
     box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
     color: rgb(137, 137, 137);
   }
-  
-  .buttons button:focus {
-    background: #dde1e7;
-    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
-  }
-  
-  .buttons {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
+  input{
+    background-color:skyblue ;
   }
 
    

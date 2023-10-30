@@ -7,43 +7,31 @@
     <link rel="stylesheet " href="style.css">
 </head>
 <body>
-  
     <div class="square">
       <div id="cal-body">
-        <div class="input">
-            <input type="text">
+        <div class="display">
+            <input type="text" id="textarea">
         </div>
         <div style="padding-top: 30px;">
-
             <div class="buttons">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>+</button>
-            </div>
-            <div class="buttons">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-            </div>
-            <div class="buttons">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>*</button>
-            </div>
-            <div class="buttons">
-                <button>.</button>
-                <button>0</button>
-
-                <button style="width: 180px;">=</button>
-                
-                
-            </div>
-        </div>
-    </div>
-    </div>
+                <button onclick="printvalue('1')">1</button>
+                <button onclick="printvalue('2')">2</button>
+                <button onclick="printvalue('3')">3</button>
+                <button onclick="printvalue('+')">+</button>
+                <button onclick="printvalue('4')">4</button>
+                <button onclick="printvalue('5')">5</button>
+                <button onclick="printvalue('6')">6</button>
+                <button onclick="printvalue('-')">-</button>
+                <button onclick="printvalue('7')">7</button>
+                <button onclick="printvalue('8')">8</button>
+                <button onclick="printvalue('9')">9</button>
+                <button onclick="printvalue('*')">*</button>
+                    <button onclick="allclear()">AC</button> 
+                <button onclick="printvalue('.')">.</button>
+                <button onclick="printvalue('0')">0</button>
+                <button onclick="Equal()">=</button> 
+       
+           </div>
      <script src="cal.js"></script>
  </body>
 </html>
