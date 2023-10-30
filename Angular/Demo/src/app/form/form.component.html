@@ -1,6 +1,6 @@
 <form #form="ngForm" class="container">
-     {{form.value|json}}
-    {{user | json}}
+     <!-- {{form.value|json}} -->
+    <!-- {{user | json}} -->
     <div class="form-group">
         <label for="id1" class="form-label">FirstName</label>
         <input type="text" required #fn="ngModel" class="form-control" name="firstname"id="id1" [(ngModel)]="user.firstname" [class.is-invalid]="fn.touched && fn.invalid" pattern="^[A-Za-z]{1,25}$">
@@ -48,6 +48,8 @@
         <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="..." name="agree" required #agree="ngModel"[(ngModel)]="user.agree" >Accept terms and conditions
         <p *ngIf="(agree.touched ||a) && agree.invalid " class="text-danger">click This Fields</p>
       </div> 
-      <input type="radio" class="btn-check" name="options-outlined" id="danger-warning" autocomplete="off">
-      <label class="btn btn-outline-danger" for="danger-warning" (click)="Validate()">submit</label>
+      <input type="radio" class="btn-check" name="options-outlined" id="danger-success" autocomplete="off">
+      <label class="btn btn-outline-success" for="danger-success"(click)="Validate()"style="float:right;font-size: 3vh;">submit</label>
+      <label class="btn btn-outline-warning" for="danger-warning"(click)="cancel()"style="float:left;font-size:3vh">Cancel</label>
+
 </form>
