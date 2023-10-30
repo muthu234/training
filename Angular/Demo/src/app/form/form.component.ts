@@ -15,6 +15,8 @@ export class FormComponent {
  }
  Validate(){
   this.a=true;
+// alert("Enter Your FUll Details in this form");
+
  }
  cancel(){
 // this.c=true;

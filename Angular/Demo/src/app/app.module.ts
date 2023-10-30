@@ -12,6 +12,7 @@ import { FormComponent } from './form/form.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { FormComponent } from './form/form.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule, //step:6
+   
   
 
   ],

@@ -3,7 +3,7 @@
     <!-- {{user | json}} -->
     <div class="form-group">
         <label for="id1" class="form-label">FirstName</label>
-        <input type="text" required #fn="ngModel" class="form-control" name="firstname"id="id1" [(ngModel)]="user.firstname" [class.is-invalid]="fn.touched && fn.invalid" pattern="^[A-Za-z]{1,25}$">
+        <input type="text" required #fn="ngModel" class="form-control" name="firstname"id="id1" [(ngModel)]="user.firstname" [class.is-invalid]="fn.touched && fn.invalid"[class.is-valid]="fn.touched && fn.valid" pattern="^[A-Za-z]{1,25}$">
         <!-- Dirty:{{f1.dirty}} ---- modify
         Pristine:{{f1.pristine}} ---- only touch Not Modify
        Touched: {{f1.touched}}
@@ -17,13 +17,13 @@
    </div>
     <div class="form-group">
         <label for="id2" class="form-label">Last Name</label>
-        <input type="text"  required #ln="ngModel" class="form-control" name="lastname" [(ngModel)]="user.lastname" id="id2" [class.is-invalid]="ln.touched && ln.invalid" pattern="^[A-Za-z]{1,10}$">
+        <input type="text"  required #ln="ngModel" class="form-control" name="lastname" [(ngModel)]="user.lastname" id="id2" [class.is-invalid]="ln.touched && ln.invalid"[class.is-valid]="ln.touched && ln.valid" pattern="^[A-Za-z]{1,10}$">
         <p *ngIf="(ln.touched ||a) && ln.invalid" class="text-danger"> Please Enter Your Lastname</p>
         <p *ngIf="ln.errors?.['pattern']" class="text-warning">Please enter Your correct Lastname</p>
     </div>
     <div>
         <label>Select Your Department</label>
-        <select class="form-select" aria-label="Default select example" name="department" required #dept="ngModel" [(ngModel)]="user.department"[class.is-invalid]="dept.touched && dept.invalid">
+        <select class="form-select" aria-label="Default select example" name="department" required #dept="ngModel" [(ngModel)]="user.department"[class.is-invalid]="dept.touched && dept.invalid"[class.is-valid]="dept.touched && dept.valid">
             <!-- <option selected>Select Your Department</option> -->
             <option value="Mechanical">Mechanical</option>
             <option value="Automobile">Automobile</option>
@@ -34,7 +34,7 @@
     <label>Select Your Gender</label>
     
     <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="Gender"  value="Male" #gender="ngModel" [(ngModel)]="user.gender" [class.is-invalid]="gender.touched && gender.pristine ">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name="Gender"  value="Male" #gender="ngModel" [(ngModel)]="user.gender" [class.is-invalid]="gender.touched && gender.pristine">
         <label class="form-check-label" for="flexRadioDefault1">Male
         </label>
     </div>

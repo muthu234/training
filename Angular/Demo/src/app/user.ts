@@ -6,6 +6,4 @@ export class User {
         public gender:string,
         public agree:boolean
         ){}
-       
-   
 }
