@@ -1,0 +1,112 @@
+.team
+{
+    font-family: "Inter", sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border;
+h1{
+    font-weight: 800;
+    color:rgb(0,0,0);
+    font-size: 36px;
+    margin-top: 50px;
+}  
+h2{
+    color: rgb(40,42,48);
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+}
+.detalis
+{
+    font-family: "Inter", sans-serif;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: left;
+h3{
+    color: rgb(107,111,118);
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 280px;
+}
+p:nth-child(2)
+{
+    color: rgb(0,0,0);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 280px;
+    line-height: 24px;
+}
+p:nth-child(n)
+{
+    color: rgb(0,0,0);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 280px;
+    line-height: 26px;
+}
+a.team_link:hover {
+    text-decoration: underline;
+    color: rgb(94, 93, 240);
+    cursor: pointer;
+  }
+a.team_link {
+    text-decoration: none;
+    color: rgb(94, 93, 240);
+    font-size: 16px;
+    font-weight: 400;
+  }
+.detalis:nth-child(4) {
+    color: rgb(107,111,118);
+    font-size: 13px;
+    font-weight: 700;
+}
+h5{
+    color: rgb(0,0,0);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 280px;
+    line-height: 24px;
+
+}
+.bx bxl-twitter
+{
+    font-size: 700px;
+    color: pink;
+}
+.twitter_btn{
+    border-radius: 966px;
+    background: rgb(94, 93, 240);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    margin-left:280px;   
+    padding: 12px 20px 12px 20px;
+    width: fit-content;
+    margin-top: 10px;
+    // align-items: center;
+   
+}
+.Linkedin_btn
+{
+    border-radius: 966px;
+    background: rgb(94, 93, 240);
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    margin-left:280px; 
+    margin-top: 15px;  
+    padding: 12px 20px 12px 20px;
+    width: fit-content;
+}
+#icon
+{
+position: relative;
+top: 6px;
+}
+
+}
