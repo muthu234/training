@@ -1,0 +1,88 @@
+.contact
+{
+    font-family: "Inter",sans-serif;
+    text-align: center;
+    background-color: #fff;
+
+h1{
+    color: rgb(0,0,0);
+    font-size: 36px;
+    font-weight:800;
+    margin-top:80px;
+}
+h3
+{
+    color: rgb(0,0,0);
+    font-size: 16px;
+    font-weight:400;
+    margin-top: 18px;
+}
+span{
+    color: rgb(0,0,0);
+    font-size: 16px;
+    font-weight:700;
+}
+}
+.contact_field
+{
+    font-size: 14px;
+    color: rgb(135,134,131);
+    font-weight: 400;
+    text-align: left; 
+.email
+{
+    margin-left:390px;
+    color: rgb(135,134,131 );
+    font-size: 14px;
+    margin-top: 18px;
+}
+.input_field
+{
+    margin-top: 5px;
+    margin-left: 390px;
+    cursor: text;
+    height: 44px;
+    width: 480px;
+    border: 1px solid #ccc;
+}
+.Leave_message
+{
+    margin-left:390px;
+    color: rgb(135,134,131 );
+    font-size: 14px;
+    margin-top:10px;
+}
+.Comment
+{
+    height: 92px;
+    width: 480px;
+    margin-left:390px;
+    margin-top:8px;
+    color: rgb(135,134,131 );
+    cursor: text;
+    border: 1px solid #ccc;
+    background-color: rgb(249, 249,250);
+}
+.sumbit
+{
+    color: rgb(82,156,202);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 2px;
+    height: 44px;
+    padding: 0px 16px 0px 16px;
+    outline-color:rgb(82,156,202) ;
+    border: none;
+    margin-left:388px;
+    margin-top: 8px;
+    background-color: rgb(246,249,251);
+    min-width: 152px;
+    border: 1px solid rgb(211,228,249);
+   
+
+}
+}   
+
+
+
