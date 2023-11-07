@@ -1,0 +1,37 @@
+<div class="container">
+<form action="#" [formGroup]="userForm">
+    <div class="form-group">
+        <label for="name" class="form-label" >Name</label> 
+        <input type="text" class="form-control" formControlName="name" 
+        [class.is-valid]="form['name'].touched && form['name'].valid"
+        [class.is-invalid]="form['name'].touched && form['name'].invalid" pattern="^[A-Za-z]{1,25}$"> <!--{{form['name'].touched}}-->  
+        <p *ngIf="form['name'].touched  && form['name'].invalid" class="text-danger" >
+            <span *ngIf="form['name'].touched && form['name'].hasError('required')">Name is required</span>
+            <span *ngIf="form['name'].touched  && form['name'].hasError('pattern')">Enter Your correct name</span>
+        </p>
+    </div>
+    <div class="form-group">
+        <label for="email"class="form-label" >Email</label>
+        <input type="email" class="form-control"formControlName="email"
+        [class.is-valid]="form['email'].touched  && form['email'].valid"
+        [class.is-invalid]="form['email'].touched && form['email'].invalid" pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"> 
+        <p *ngIf="form['email'].touched  && form['email'].invalid" class="text-danger">
+            <span *ngIf="form['email'].touched && form['email'].hasError('required')">Email Is Required</span>
+            <span *ngIf="form['email'].touched && form['email'].hasError('pattern')">Enter Your Correct Email </span>
+        </p>
+    </div>
+    <div class="form-group">
+        <label for="mobilenumber" class="form-label" >MobileNumber</label>
+        <input type="mobilenumber" class="form-control" formControlName="mobilenumber"
+        [class.is-valid]="form['email'].touched  && form['email'].valid"
+        [class.is-invalid]="form['mobilenumber'].touched && form['mobilenumber'].invalid" pattern="^\d{10}$">
+        <p *ngIf="form['mobilenumber'].touched && form['mobilenumber'].invalid" class="text-danger">
+            <span *ngIf="form['mobilenumber'].touched && form['mobilenumber'].hasError('required')"> Mobile Number Is Required</span>
+            <span *ngIf="form['mobilenumber'].touched && form['mobilenumber'].hasError('pattern')">Enter Your Correct Mobile Number</span>
+        </p>
+        <label class="btn btn-outline-success" for="danger-success" (click)="submit()"style="float:right;font-size:3vh">Submit</label>
+        <label class="btn btn-outline-warning" for="danger-warning"(click)="cancel()"style="float:left;font-size:3vh">Cancel</label>
+    </div>
+    <!-- {{form['name'].touched}} -->
+    </form>
+</div>
