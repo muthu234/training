@@ -17,7 +17,9 @@ initializeForm()
     this.userForm=this.fb.group({
       name :[null,[Validators.required]],
       email:[null,[Validators.required]],
+      password:[null,[Validators.required]],
       mobilenumber:[null,[Validators.required]]
+    
     });
   }
 get form()
@@ -33,8 +35,10 @@ get form()
   {
     if(this.userForm.invalid){
       this.userForm.markAllAsTouched();
-      return ;
+      return;
     }
+    location.reload();
+    // history.go();
   }
 
 }
