@@ -1,0 +1,92 @@
+ <!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body  data-spy="scroll" data-target="#nav">
+    <header class="clearfix" id="home">
+        <nav class="navbar navbar-default navbar-fixed-top"  id="nav">
+            <div class="container">
+                <div class="navbar-header">
+                    <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav social-list">
+                        <li><a href="https://github.com/muthu234/" target="_blank"><i class="fa fa-github fa-2x" title="GitHub" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa fa-linkedin fa-2x" title="LinkedIn" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="https://twitter.com/home"><i class="fa fa-twitter fa-2x" title="Facebook" aria-hidden="true"></i>
+                        </a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li data-elem="parallax"><a href="#home">HOME</a></li>
+                        <li data-elem="education"><a href="#education">EDUCATION</a></li>
+                        <li data-elem="skills"><a href="#skills">SKILLS</a></li>
+                        <li data-elem="contactme"><a href="#contactme">CONTACT ME</a></li>
+                        <li data-elem="aboutme"><a href="#aboutme">ABOUT ME</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner parallax scroll" id="parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-4 col-md-8 col-sm-12  banner-content">
+                        <h3>full stack developer</h3>
+                        <h1>
+                            Personal portfolio webpage
+                        </h1>
+                        <h3>MUTHUVEL M</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about scroll"  id="about">
+        <div class="container">
+            <div class="row">
+                <div class="text-center about-content">
+                    <h2>Hi there!</h2>
+                    <img src="formal-business-fashion-groomed-male-special-event-its-wedding-day-stylish-art-director-real-esthete-all-details-being-real-gentleman-wear-bow-tie-handsome-tuxedo-man-men-fashion_474717-45716.avif" alt="about me" class="image-responsive img-circle img-thumbnail center-block" style="height: 500px; width:500px">
+                    <p class="about-text">My name is Muthuvel, I am from Chennai, India. And I'm a beginner full stack web developer, currently I have some experience with HTML,PYTHON,CSS,SQL. Now I practice in the development of web applications, and some frameworks like Angular. I want to learn more and utilize my skills in the field of Information Technology and to help solve real world challenges.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="content">
+            <div id="form">
+                <form action="" id="contactForm" method="post">
+                    <span>Name</span>
+                    <input type="text" name="name" class="name" placeholder="Enter your name" tabindex=1 />
+                    <span>Email</span>
+                    <input type="text" name="email" class="email" placeholder="Enter your email" tabindex=2 />
+                    <span id="captcha">
+                        <span id='code'>5802</span>
+                        <input type="button" onclick='captchaCode();' style="height: 20px;width: 39px;">
+                    </span>
+                    <input type="text" name="captcha" class="captcha" maxlength="4" size="4" placeholder="Enter captcha code" tabindex=3 />
+                    <span>Message</span>
+                    <textarea class="message" placeholder="Enter your message" tabindex=4></textarea>
+                    <input type="submit" name="submit" value="Send e-mail" class="submit" tabindex=5>
+                </form>
+            </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

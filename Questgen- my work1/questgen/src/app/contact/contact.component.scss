@@ -1,3 +1,66 @@
+nav{
+    // border: 2px solid red;
+    display: flex;
+    margin-top: 3px;
+    padding: 0px;
+    background: white;
+    // position: fixed;
+    font-family: 'Inter', sans-serif;
+    .logo{
+        display: flex;
+        padding: 7px;
+        margin: 10px 5px;
+        svg{
+            color: rgb(138, 36, 255);
+            margin: 0px 7px;
+        }
+        h1{
+            color: rgb(20, 60, 244);
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 2px;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: flex-end; /* Align content to the right */
+        align-items: center; /* Vertically center content within the container */
+        flex: 1; 
+        margin-right: 30px;
+        margin-top:1%;
+        a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.76);
+            li{
+                margin: 0 18px;
+                list-style: none;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+        input{
+            padding: 6px 12px;
+            font-size: 16px;
+            // color: white;
+            background: rgb(20, 60, 244);
+            color: rgb(255, 255, 255);
+            box-shadow: rgb(20, 60, 244) 0px 10px 20px -10px;
+            font-weight: bold;
+            border-radius: 100px;
+            border: none;
+            padding: 6px 20px;
+            border-radius: 999px;
+            width: -moz-fit-content;
+            width: fit-content;
+            margin: 10px 0;
+            font-weight: 700;
+            height: 35px;
+        }
+    }
+}
 .contact
 {
     font-family: "Inter",sans-serif;
@@ -44,6 +107,7 @@ span{
     height: 44px;
     width: 480px;
     border: 1px solid #ccc;
+    outline: none;
 }
 .Leave_message
 {
@@ -62,6 +126,7 @@ span{
     cursor: text;
     border: 1px solid #ccc;
     background-color: rgb(249, 249,250);
+    outline: none;
 }
 .sumbit
 {

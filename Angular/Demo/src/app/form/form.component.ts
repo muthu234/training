@@ -15,9 +15,9 @@ export class FormComponent {
  }
  Validate(){
   this.a=true;
-// alert("Enter Your FUll Details in this form");
-
+  location.reload();
  }
+ 
  cancel(){
 // this.c=true;
 location.reload();

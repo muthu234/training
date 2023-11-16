@@ -8,7 +8,12 @@ import { MyserviceService } from '../myservice.service';
 export class StudentComponent implements OnInit {
   student:any[]=[];
   toDo:any[]=[]; //step 5:1
-  a:any;
+  a:any = [
+    { id: 1, name: 'John', age: 30, department: 'HR' },
+    { id: 2, name: 'Alice', age: 25, department: 'IT' },
+    
+  ];
+ 
   constructor(private myservice:MyserviceService){}
   ngOnInit(): void {
     this.myservice.getAll().subscribe((data)=>

@@ -1,4 +1,4 @@
-.r2{
+/* .r2{
     background-color: #FF8B7D;
     height: 80px;
     margin: 5px 5px;
@@ -140,7 +140,7 @@ height: 80px;
     margin: 5px 5px;   
 }
 .r11{
-    /* background-color: springgreen; */
+    /* background-color: springgreen; 
     height: 80px;
     margin: 5px 5px;   
 }
@@ -190,8 +190,16 @@ height: 80px;
     height:80px ;
 }
 .h6{
-    /* font-family: 'Courier New', Courier, monospace; */
+    * font-family: 'Courier New', Courier, monospace; 
     font-size: 12em;
     background-color: white;
 }
+ */
 
+ .main > div{
+    color: red;
+ }
+
+ .hi  div  div  h1{
+    color: blueviolet;
+ }

@@ -50,7 +50,7 @@ export class CrudComponent implements OnInit{
     console.log(this.regno);
     this.ser.getbyid(this.regno).subscribe((data)=>{
       console.log(data);
-      this.get_data=data;
+     this.get_data=data;
      this.get_name=this.get_data[0].name;
      this.get_age=this.get_data[0].age;
      this.get_department=this.get_data[0].department;

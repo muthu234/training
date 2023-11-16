@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mini Cards Example</title>
+    <style>
+          /* Your provided CSS code here */
+        body.home .mini-card:focus-within,
+        body.home .mini-card:hover {
+            transform: translateY(-1rem) rotate(3deg);
+        }
+
+        body.home .mini-card:focus-within~.mini-card,
+        body.home .mini-card:hover~.mini-card {
+            transform: translateX(130px);
+        }
+
+        body.home .mini-card:first-child:focus-within,
+        body.home .mini-card:first-child:hover {
+            transform: translate(-.5rem, -1rem) rotate(3deg);
+        }
+
+        body.home .mini-card:not(:first-child) {
+            margin-left: -130px;
+            box-shadow: -3rem 0 3rem -2rem #000;
+        }
+        /* Default styles for .mini-card */
+        body.home .mini-card {
+            width: 200px;
+            height: 100px;
+            background-color: #f0f0f0;
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            transition: transform 0.3s ease; /* Smooth transition for transform property */
+        }
+
+        /* Media query for viewport width up to 1200px */
+        @media (max-width: 1200px) {
+            body.home .mini-card {
+                min-width: 220px;
+            }
+
+            body.home .mini-card:not(:first-child) {
+                margin-left: -30px;
+            }
+
+            body.home .mini-card:hover {
+                transform: translateY(-1rem);
+            }
+
+            body.home .mini-card:hover~.mini-card {
+                transform: translateX(30px);
+            }
+        }
+
+        /* Media query for viewport width up to 800px */
+        @media (max-width: 800px) {
+            body.home .mini-card {
+                min-width: 190px;
+            }
+
+            body.home .mini-card:not(:first-child) {
+                margin-left: -10px;
+            }
+
+            body.home .mini-card:hover {
+                transform: translateY(-1rem);
+            }
+
+            body.home .mini-card:hover~.mini-card {
+                transform: translateX(10px);
+            }
+        }
+          /* Your provided CSS code here */
+          body.home .mini-card:focus-within,
+          body.home .mini-card:hover {
+              transform: translateY(-1rem) rotate(3deg);
+          }
+  
+          body.home .mini-card:focus-within~.mini-card,
+          body.home .mini-card:hover~.mini-card {
+              transform: translateX(130px);
+          }
+  
+          body.home .mini-card:first-child:focus-within,
+          body.home .mini-card:first-child:hover {
+              transform: translate(-.5rem, -1rem) rotate(3deg);
+          }
+  
+          body.home .mini-card:not(:first-child) {
+              margin-left: -130px;
+              box-shadow: -3rem 0 3rem -2rem #000;
+          }
+    </style>
+</head>
+<body class="home">
+    <div class="mini-card">Card 1</div>
+    <div class="mini-card">Card 2</div>
+    <div class="mini-card">Card 3</div>
+    <div class="mini-card">Card 4</div>
+</body>
+</html>

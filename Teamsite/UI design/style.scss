@@ -1,0 +1,36 @@
+    .pricing 
+    {
+        text-align: center;
+        padding: 13px;
+    h1{
+        font-family: 'Inter', sans-serif;   
+        // font-size: 40px;
+        // color: #333;
+        font-size: 34px;
+        // font-size: var(--font-size);
+        line-height: var(--line-height);
+    }
+    p{
+        font-size: 21px;
+    }
+    a{
+        text-decoration: none;
+        padding: 10px;
+    }
+    .pricing    p {
+        // height: 100px;
+        // width: 200px;
+        // text-align: center;
+        // border: 2px solid red;
+        // justify-content: center;
+        // display: flex;
+        // flex-wrap: wrap;
+        color: aqua;
+    }
+    .row{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    }

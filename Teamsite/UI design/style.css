@@ -1,0 +1,25 @@
+.pricing {
+  text-align: center;
+  padding: 13px;
+}
+.pricing h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 34px;
+  line-height: var(--line-height);
+}
+.pricing p {
+  font-size: 21px;
+}
+.pricing a {
+  text-decoration: none;
+  padding: 10px;
+}
+.pricing .pricing p {
+  color: aqua;
+}
+.pricing .row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=style.css.map */

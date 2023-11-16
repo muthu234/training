@@ -9,6 +9,12 @@ export class ServiceNameService {
   providedIn: 'root'
 })
 export class MyserviceService {
+  getToDos() {
+    throw new Error('Method not implemented.');
+  }
+  getStudents(): any[] {
+    throw new Error('Method not implemented.');
+  }
   // apiUrl:string ='https://jsonplaceholder.typicode.com/todos/1'//step 3
   Url:string ='http://localhost:3000';
   url1:any

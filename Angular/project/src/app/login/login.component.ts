@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  show=false;
-  //  emps=['muthu','vel','kumar'];
-  // name:string='muthu';
+  show=true;
+   emps=['muthu','vel','kumar'];
+  name:string='muthu';
   // myfun(){
   //   console.log(this.name)};
 }
