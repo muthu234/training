@@ -1,0 +1,46 @@
+<div class="container">
+    <form action="#" [formGroup]="userForm">
+        <div class="form-group">
+            <label for="title" class="form-label" >Title</label> 
+            <input type="text" class="form-control" formControlName="title" 
+            [class.is-valid]="form['title'].touched && form['title'].valid"
+            [class.is-invalid]="form['title'].touched && form['title'].invalid" pattern="^[A-Za-z]{1,25}$"> <!--{{form['name'].touched}}-->  
+            <p *ngIf="form['title'].touched  && form['title'].invalid" class="text-danger" >
+                <span *ngIf="form['title'].touched && form['title'].hasError('required')"> Title is required</span>
+                <span *ngIf="form['title'].touched  && form['title'].hasError('pattern')">Enter Your correct Title</span>
+            </p>
+        </div>
+
+        <div class="form-group">
+            <label for="startDate"class="form-label" >StartDate</label>
+            <div class="card flex justify-content-center">
+                <p-calendar [(ngModel)]="startDate" [ngModelOptions]="{ standalone: true }" [showIcon]="true"></p-calendar>
+            </div>
+            <!-- <input type="text" class="form-control" formControlName="startDate"
+                [class.is-valid]="form['startDate'].touched && form['startDate'].valid"
+                [class.is-invalid]="form['startDate'].touched && form['startDate'].invalid" pattern="/^\d{4}-\d{2}-\d{2}$/">
+            <p *ngIf="form['startDate'].touched && form['startDate'].invalid" class="text-danger">
+                <span *ngIf="form['startDate'].touched && form['startDate'].hasError('required')">Password is required</span>
+                <span *ngIf="form['startDate'].touched && form['startDate'].hasError('pattern')">Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, and one number.</span>
+            </p> -->
+            </div>
+            <div class="form-group">
+                <label for="EndDate"class="form-label" >EndDate</label>
+                <div class="card flex justify-content-center">
+                    <p-calendar [(ngModel)]="EndDate" [ngModelOptions]="{ standalone: true }" [showIcon]="true"></p-calendar>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Description"class="form-label" >Description</label>
+            <div class="card flex justify-content-center">
+                <textarea rows="5" cols="30" pInputTextarea [autoResize]="true"></textarea>
+            </div>
+            </div>
+        <div class="form-group">
+           <label class="btn btn-outline-success" for="danger-success" (click)="submit()"style="float:right;font-size:3vh">Submit</label>
+            <label class="btn btn-outline-warning" for="danger-warning"(click)="cancel()"style="float:left;font-size:3vh">Cancel</label>
+        </div>
+        
+        </form>
+    </div>
+  
