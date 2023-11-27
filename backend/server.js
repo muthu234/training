@@ -20,7 +20,7 @@ console.log("connected as id " + db.threadId);
 });
 //create user
 app.post("/createUser", (req, res) => {db.query(
-"insert into studentdetails (regno,name,age,department,isactive) values(?,?,?,?,?)",
+"insert into studentdetails (regno,name,age,department,isactive) values(?,?,?,?,?)                  ",
 [req.body.regno, req.body.name,req.body.age,req.body.department,1],
 function (error, results, fields) {
 if (error) console.log(error);

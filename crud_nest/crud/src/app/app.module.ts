@@ -12,6 +12,7 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { ServiceService } from './service.service';
 import {HttpClientModule } from '@angular/common/http';
 import { ViewComponent } from './view/view.component';
+import { CardModule } from 'primeng/card';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ViewComponent } from './view/view.component';
     CalendarIcon ,
     BrowserAnimationsModule,
     InputTextareaModule,
-    HttpClientModule
+    HttpClientModule,
+    CardModule
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]

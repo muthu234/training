@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from '../service.service';
+import { CardModule } from 'primeng/card';
 
 
 @Component({

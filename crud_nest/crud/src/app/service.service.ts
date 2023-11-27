@@ -16,6 +16,10 @@ export class ServiceService {
   updatecourse(id:number,obj:any){
     return this.httpClient.put(this.url+"/updateCourse",id)
   }
+  createcourse(data:any)
+  {
+    return this.httpClient.post(this.url +"/createcourse",data)
+  }
   
   
 }
