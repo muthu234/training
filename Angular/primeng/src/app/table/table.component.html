@@ -1,4 +1,4 @@
-<div class="card flex justify-content-center">
+<!-- <div class="card flex justify-content-center">
     <div class="flex flex-wrap gap-3">
         <div class="flex align-items-center">
             <p-radioButton name="pizza" value="Cheese" [(ngModel)]="ingredient" inputId="ingredient1"></p-radioButton>
@@ -21,22 +21,114 @@
         </div>
     </div>
 </div> 
+ -->
+<!-- <div class="card flex justify-content-center">
+    <input type="text" pInputText pTooltip="Enter your username" placeholder="hover to display tooltip">
+</div> -->
+
+
+
+
+
+<!-- --------profile--------------- -->
+    <div class="card flex justify-content-center">
+    <p-overlayPanel #op>
+        <div class="container">
+           <div class="profile">
+                <p class="profileicon">M</p>
+           </div>
+           <div class="p-details">
+            <p class="name">Mukesh</p>
+            <p class="role">Junior Associate- Full Stack</p>
+            <p class="email">Mukesh@gmail.com</p>
+            <p  class="Editprofile"><a href="">Edit profile</a></p>
+           </div>
+        </div>
+    </p-overlayPanel>
+    <p-button (click)="op.toggle($event)" icon="pi pi-image" label="Show"></p-button>
+</div> 
+
+
+
+
+<!-- -----------------edit profile--------------- -->
+<!-- <div class="container">
+    <p class="header">My Profile</p>
+    <div class="uploadphoto">
+        <p class="profileicon">M</p>
+        <div class="upload">
+            <img src="../../assets/Upload.svg" class="uploadicon">
+            <a href="" class="uploadtext">Upload photo</a>
+        </div>
+    </div>
+<div class="form">
+    <div class="details" [formGroup]="editform">
+            <div class="name">
+               <label for="Name" class="labelName">Name</label>
+                <input type="text" class="inputField login-field" placeholder="Enter your Name" pInputText   formControlName="name"/>
+            </div>
+            <div class="designation">
+               <label for="designation" class="labelName">Designation</label>
+                <input type="text" class="inputField login-field" placeholder="Enter your Designation" pInputText   formControlName="name"/>
+            </div>
+            <div class="email">
+                <label for="email" class="labelName">Email</label>
+                <p class="emailtext">Mukesh@gmail.com</p>
+             </div>
+             <div class="footer">
+             <button class="cancel" (click)="Cancel()">Cancel</button>
+             <button class="save" (click)="save()">Save</button>
+             </div>
+
+    </div>
+</div> -->
+
+
+
+
+
+<!-- -----------------edit profile using sidebar--------------- -->
 <!-- 
-<p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Code</th>
-            <th>Name</th>
-            <th>Category</th>
-            <th>Quantity</th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-product>
-        <tr>
-            <td>{{ product.code }}</td>
-            <td>{{ product.name }}</td>
-            <td>{{ product.category }}</td>
-            <td>{{ product.quantity }}</td>
-        </tr>
-    </ng-template>
-</p-table> -->
+<p-button type="button" class="mr-2" (click)="sidebarVisible = true" icon="pi pi-arrow-right" styleClass="w-40rem"></p-button>
+<div>
+    <p-sidebar [(visible)]="sidebarVisible" position="right">
+      <div class="container">
+        <p class="header">My Profile</p>
+        <div class="uploadphoto">
+          <p class="profileicon">M</p>
+          <div class="upload">
+            <img src="../../assets/Upload.svg" class="uploadicon">
+            <a href="" class="uploadtext">Upload photo</a>
+          </div>
+        </div>
+        <div class="form">
+          <div class="details" [formGroup]="editform">
+            <div class="name">
+              <label for="Name" class="labelName">Name</label>
+              <input type="text" class="inputField login-field" placeholder="Enter your Name" pInputText formControlName="name" />
+            </div>
+            <div class="designation">
+              <label for="designation" class="labelName">Designation</label>
+              <input type="text" class="inputField login-field" placeholder="Enter your Designation" pInputText formControlName="designation" />
+            </div>
+            <div class="email">
+              <label for="email" class="labelName">Email</label>
+              <p class="emailtext">Mukesh@gmail.com</p>
+            </div>
+          </div>
+        </div>
+          </div>
+          <ng-container >
+            <ng-template pTemplate="footer">
+                <div class="footer">
+                    <button class="cancel" (click)="Cancel()">Cancel</button>
+                    <button class="save" (click)="save()">Save</button>
+                  </div>
+            </ng-template>
+        </ng-container>
+    </p-sidebar>
+  </div> -->
+  
+
+
+

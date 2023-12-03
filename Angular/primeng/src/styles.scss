@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+// @import "primeicons/primeicons.css";
+
+// ------profile----
+
+// 
+.p-overlaypanel-content {
+    background: #ffffff;
+    color: #495057;
+    border: 0 none;
+    width: 290px;
+    height: 190px;
+}
+
+.p-details
+    {
+        padding-left: 11px;
+        .name{
+            color: #000;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .role{
+            color: #4F4F4F;
+            font-size: 12px;
+            font-weight: 500;
+          }   
+        .email
+        {
+            color: #4F4F4F;
+            font-weight: 400;
+            font-size: 12px;
+        }
+    }
+
+
+
+// ----------------------edit profile using sidebar-----------
+    // .p-sidebar
+    // {
+    //     width: 44%;
+    // }
+    // .p-icon
+    // {
+    //     display: none;
+    // }
