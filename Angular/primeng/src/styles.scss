@@ -1,10 +1,10 @@
 
 
-// @import "primeicons/primeicons.css";
+@import "primeicons/primeicons.css";
 
 // ------profile----
 
-// 
+
 .p-overlaypanel-content {
     background: #ffffff;
     color: #495057;
@@ -38,11 +38,11 @@
 
 
 // ----------------------edit profile using sidebar-----------
-    // .p-sidebar
-    // {
-    //     width: 44%;
-    // }
-    // .p-icon
-    // {
-    //     display: none;
-    // }
+    .p-sidebar
+    {
+        width: 30%;
+    }
+    .p-icon
+    {
+        display: none;
+    }

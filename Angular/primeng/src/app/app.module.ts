@@ -11,12 +11,15 @@ import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SidebarModule } from 'primeng/sidebar';
+import { TableModule } from 'primeng/table';
+import {HttpClientModule} from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     RadioButtonModule,
@@ -26,7 +29,9 @@ import { SidebarModule } from 'primeng/sidebar';
     ButtonModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    SidebarModule
+    SidebarModule,
+    TableModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
