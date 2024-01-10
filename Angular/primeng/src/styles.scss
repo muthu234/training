@@ -1,48 +1,106 @@
-
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@800&display=swap');
 @import "primeicons/primeicons.css";
 
 // ------profile----
 
 
-.p-overlaypanel-content {
-    background: #ffffff;
-    color: #495057;
-    border: 0 none;
-    width: 290px;
-    height: 190px;
+// .p-overlaypanel-content {
+//     background: #ffffff;
+//     color: #495057;
+//     border: 0 none;
+//     width: 290px;
+//     height: 190px;
+// }
+
+// .p-details
+//     {
+//         padding-left: 11px;
+//         .name{
+//             color: #000;
+//             font-family: Poppins;
+//             font-size: 16px;
+//             font-weight: 500;
+//         }
+//         .role{
+//             color: #4F4F4F;
+//             font-size: 12px;
+//             font-weight: 500;
+//           }   
+//         .email
+//         {
+//             color: #4F4F4F;
+//             font-weight: 400;
+//             font-size: 12px;
+//         }
+//     }
+
+
+
+// // ----------------------edit profile using sidebar-----------
+    // .p-sidebar
+    // {
+    //     width:653px;
+    //     height: 889px;
+    // }
+//     .p-icon
+//     {
+//         // display: none;
+//     }
+
+
+// for campaign 
+.p-sidebar .p-sidebar-header 
+{
+    color: #0D0C22;
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 600;
 }
 
-.p-details
+  .p-sidebar
     {
-        padding-left: 11px;
-        .name{
-            color: #000;
-            font-family: Poppins;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        .role{
-            color: #4F4F4F;
-            font-size: 12px;
-            font-weight: 500;
-          }   
-        .email
-        {
-            color: #4F4F4F;
-            font-weight: 400;
-            font-size: 12px;
-        }
+        width:653px;
+        height: 720px;
+    }
+    .p-sidebar .p-sidebar-footer
+    {
+        display: flex;
+        justify-content:flex-end;
+        gap:20px;
     }
 
-
-
-// ----------------------edit profile using sidebar-----------
-    .p-sidebar
+    .p-datepicker-trigger
     {
-        width: 30%;
+        background: white;
+        color:black;
+        border:none;
     }
-    .p-icon
-    {
-        display: none;
+    .p-calendar .p-inputtext  {
+        border:none;
+    }
+    .cancel .p-button{
+        border-radius: 10px ;
+        border: 1px solid #0082A8;
+        background: #FFF ;
+        padding: 10px 24px ;
+        color: #0082A8;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 10px;
+        width: 100%;
+        height: 40px;
+    }
+    .submit .p-button{
+        background: #0082A8 ;
+        padding: 10px 24px;
+        border: 4px solid  #0082A8;
+        border-radius: 4px;
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
     }

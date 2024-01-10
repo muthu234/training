@@ -1,4 +1,6 @@
-<!-- <div class="card flex justify-content-center">
+<!-- radio Button -->
+<!-- 
+<div class="card flex justify-content-center">
     <div class="flex flex-wrap gap-3">
         <div class="flex align-items-center">
             <p-radioButton name="pizza" value="Cheese" [(ngModel)]="ingredient" inputId="ingredient1"></p-radioButton>
@@ -20,17 +22,17 @@
             <label for="ingredient4" class="ml-2">Onion</label>
         </div>
     </div>
-</div> 
- -->
-<!-- <div class="card flex justify-content-center">
-    <input type="text" pInputText pTooltip="Enter your username" placeholder="hover to display tooltip">
+</div>  -->
+<!-- Tooltip  -->
+ <!-- <div class="card flex justify-content-center">
+    <input type="text" pInputText  pTooltip="Enter Your Name" placeholder="hover to display tooltip">
 </div> -->
 
 
 
 
 
-<!-- --------profile--------------- -->
+<!-- -------  show profile details --------------- -->
  <!-- <div class="card flex justify-content-center">
     <p-overlayPanel #op>
         <div class="container">
@@ -51,8 +53,8 @@
 
 
 
-<!-- -----------------edit profile--------------- -->
-<!-- <div class="container">
+<!-- -----------------edit profile in form--------------- -->
+ <!-- <div class="container">
     <p class="header">My Profile</p>
     <div class="uploadphoto">
         <p class="profileicon">M</p>
@@ -82,14 +84,14 @@
 
     </div>
 </div> 
+ -->
 
 
 
 
+<!-- -----------------edit profile using sidebar--------------- -->
 
-<!- -----------------edit profile using sidebar--------------- -->
-
-<!-- <div>
+ <!-- <div>
     <p-sidebar [(visible)]="sidebarVisible" position="right">
       <div class="container">
         <p class="header">My Profile</p>
@@ -134,7 +136,7 @@
 
 <!-- app.component.html -->
 
-<form [formGroup]="userForm">
+ <!-- <form [formGroup]="userForm">
   <label for="firstName">First Name:</label>
   <input type="text" id="firstName" formControlName="firstName">
 
@@ -148,18 +150,18 @@
   <input type="text" id="department" formControlName="department">
 
   <label for="gender">Gender:</label>
-  <!-- <select id="gender" formControlName="gender">
+  <select id="gender" formControlName="gender">
     <option value="" disabled>Select Gender</option>
     <option value="male">Male</option>
     <option value="female">Female</option>
   </select> -->
-  <input type="text" id="gender" formControlName="gender">
+  <!-- <input type="text" id="gender" formControlName="gender"> -->
 
-  <label for="mobileNumber">MobileNumber</label>
+  <!-- <label for="mobileNumber">MobileNumber</label>
   <input type="text" id="mobileNumber" formControlName="mobileNumber">
 
   <button type="submit" (click)="createEmp()">Submit</button>
-</form>
+</form> -->
  <div class="card">
   <p-table [value]="alldetails" [tableStyle]="{'min-width': '50rem'}">
       <ng-template pTemplate="header">

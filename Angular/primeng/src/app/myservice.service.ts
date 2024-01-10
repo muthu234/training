@@ -5,10 +5,18 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MyserviceService {
+
 apiUrl='http://localhost:3000/register'
+url='http://localhost:3000/virtualscroll'
   constructor( private httpClient:HttpClient) { }
   getallEmp(){
     return this.httpClient.get(this.apiUrl+'/getdetails')
+  }
+  getallEmployee(){
+    return this.httpClient.get(this.url+'/getEmp')
+  }
+  postEmp(data:any){
+    return this.httpClient.post(this.url+'/postEmp',data)
   }
   createEmp(data:any)
   {

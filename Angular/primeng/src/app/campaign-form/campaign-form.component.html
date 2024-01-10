@@ -1,0 +1,133 @@
+<!-- <p-sidebar [(visible)]="sidebarVisible1" position="right">
+    <ng-template pTemplate="header">New Campaign</ng-template>
+</p-sidebar>
+<ng-template pTemplate="content">
+    <h3>Hello</h3>
+<!- <div class="container"> ->
+    <form [formGroup]="userForm">
+        <div class="form-label">
+            <label for="name">Name</label>
+        </div>
+        <div class="input_div">
+            <input type="text" pInputText formControlName="name"  />
+        </div>
+    </form>
+<!- </div> ->
+</ng-template>
+<p-button type="button" class="mr-2" (click)="sidebarVisible1 = true" icon="pi pi-arrow-left"></p-button> -->
+
+
+<div class="card flex justify-content-center">
+    <p-sidebar [(visible)]="sidebarVisible" position="right">
+        <ng-template pTemplate="header">New Campaign</ng-template><hr>
+        <h3>Campaign Details</h3><hr>
+        <ng-template pTemplate="content">
+        <div class="container"> 
+            <form [formGroup]="form">
+
+                <div class="input_div">
+                    <div class="form-label"><label for="name">Name<span> *</span></label></div>
+                    <input type="text" pInputText formControlName="CampaignName" placeholder="Campaign Name"  />
+                    <div class="error-indicator" class="error-indicator" *ngIf="
+                                formControls['CampaignName'].invalid &&
+                                (formControls['CampaignName'].dirty ||
+                                formControls['CampaignName'].touched)">
+                                <span class="error-type" *ngIf="formControls['CampaignName'].errors?.['required']">Campaign name is required</span>
+                    </div>
+                </div>
+
+                <div class="input_div">
+                    <div class="form-label"><label for="name" >Owner <span> *</span></label></div>
+                    <input type="text" pInputText formControlName="CampaignOwner" placeholder="Campaign Owner"  />
+                    <div class="error-indicator" class="error-indicator" *ngIf="
+                    formControls['CampaignOwner'].invalid &&
+                    (formControls['CampaignOwner'].dirty ||
+                    formControls['CampaignOwner'].touched)">
+                    <span class="error-type" *ngIf="formControls['CampaignOwner'].errors?.['required']">Campaign owner is required</span>
+                </div>
+               </div>
+
+                <div class="Date">
+
+                    <div class="startDate">
+                        <div class="form-label"><label for="icondisplay" > Start Date <span> *</span></label></div>
+                        <div class="outer">
+                        <p-calendar  [showIcon]="true"  formControlName="startDate" placeholder="select"></p-calendar>
+                        <div class="error-indicator" class="error-indicator" *ngIf="
+                                formControls['startDate'].invalid &&
+                                (formControls['startDate'].dirty ||
+                                formControls['startDate'].touched)">
+                                <span class="error-type" *ngIf="formControls['startDate'].errors?.['required']">start date is required</span>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="endDate">
+                        <div class="form-label"><label for="icondisplay" class="form-label"> End Date <span> *</span></label></div>
+                        <div class="outer">
+                        <p-calendar  [showIcon]="true" formControlName="endDate" placeholder="select"></p-calendar>
+                        <div class="error-indicator" class="error-indicator" *ngIf="
+                        formControls['endDate'].invalid &&
+                        (formControls['endDate'].dirty ||
+                        formControls['endDate'].touched)">
+                        <span class="error-type" *ngIf="formControls['endDate'].errors?.['required']">End date is required</span>
+                </div>
+                    </div>
+                    </div>
+
+                </div>
+
+                <div class="uploadheader" >
+                        <h4>Assets</h4>
+                        <div class="form-label"><label for="icondisplay" > upload File <span> *</span></label></div>
+                        <div>
+                            <div class="fileupload">
+                                <div (click)="onFileSelected($event)" formControlName="uploadFile">
+                                    <img src="../../assets/file-add-svgrepo-com 1.svg" alt="Click to open file dialog"  >
+                                  </div>
+                                <p class="selectfile">Select a files to Upload Here </p>
+                                <p class="dragfile">or drag and drop it here</p>
+                               
+                            </div>
+                            <div class="error-indicator  file-error"   *ngIf="
+                            formControls['uploadFile'].invalid &&
+                            (formControls['uploadFile'].dirty ||
+                            formControls['uploadFile'].touched)">
+                            <span class="error-type" *ngIf="formControls['uploadFile'].errors?.['required']">upload file is required</span>
+                        </div>
+                        </div>
+                       
+                </div> 
+
+                 <div class="input_div">
+                    <div class="form-label"><label for="name" >or  Video URL <span> *</span></label></div>
+                    <input type="text" pInputText formControlName="videoUrl" placeholder="URL "  />
+                    <div class="error-indicator" class="error-indicator" *ngIf="
+                    formControls['videoUrl'].invalid &&
+                    (formControls['videoUrl'].dirty ||
+                    formControls['videoUrl'].touched)">
+                    <span class="error-type" *ngIf="formControls['videoUrl'].errors?.['required']">video url is required</span>
+            </div>
+                </div>
+            
+                <div class="input_div">
+                    <div class="form-label"><label for="name" >Trigger link <span> *</span></label></div>
+                    <input type="text" pInputText formControlName="triggerLink" placeholder="Enter Trigger URL"  />
+                    <div class="error-indicator" class="error-indicator" *ngIf="
+                    formControls['triggerLink'].invalid &&
+                    (formControls['triggerLink'].dirty ||
+                    formControls['triggerLink'].touched)">
+                    <span class="error-type" *ngIf="formControls['triggerLink'].errors?.['required']">trigger link is required</span>
+            </div>
+                </div>
+
+                <div class="footer">
+                    <p-button (click)="onCancelClick()" class="cancel">Cancel</p-button>
+                    <p-button (click)="onSubmitClick()" class="submit">Submit</p-button>
+                </div>
+            </form>
+        </div> 
+    </ng-template>
+    </p-sidebar>
+    <p-button (click)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+</div>

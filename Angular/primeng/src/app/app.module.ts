@@ -13,10 +13,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SidebarModule } from 'primeng/sidebar';
 import { TableModule } from 'primeng/table';
 import {HttpClientModule} from '@angular/common/http';
+import { VirtualScrollComponent } from './virtual-scroll/virtual-scroll.component';
+import { VirtualScrollerModule } from 'primeng/virtualscroller';
+import { CampaignFormComponent } from './campaign-form/campaign-form.component';
+import { CalendarModule } from 'primeng/calendar';
+import { FileUploadModule } from 'primeng/fileupload';
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent
+    TableComponent,
+    VirtualScrollComponent,
+    CampaignFormComponent
   ],
   imports: [
     HttpClientModule,
@@ -31,7 +38,11 @@ import {HttpClientModule} from '@angular/common/http';
     ReactiveFormsModule,
     SidebarModule,
     TableModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    VirtualScrollerModule,
+    FormsModule,
+    CalendarModule,
+    FileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

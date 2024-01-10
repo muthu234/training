@@ -9,7 +9,15 @@ import { MyserviceService } from '../myservice.service';
   styleUrls: ['./table.component.scss']
 })
 export class TableComponent implements OnInit {
-  products!: any[];
+  product = {
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 25,
+    department: 'IT',
+    gender: 'Male',
+    mobileNumber: '123-456-7890',
+  };
+  // products!: any[];
   userForm!: FormGroup;
 ingredient:any
 editform!:FormGroup;
@@ -26,8 +34,8 @@ constructor(private fb:FormBuilder ,private ser:MyserviceService){
 }
 ngOnInit():void
 {
-  this.getall();
-  this.initializeForm();
+  // this.getall();
+  // this.initializeForm();
 }
 private initializeForm(): void {
   this.userForm = this.fb.group({

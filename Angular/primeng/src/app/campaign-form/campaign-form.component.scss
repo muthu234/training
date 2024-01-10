@@ -1,0 +1,119 @@
+h3 {
+    color: #0D0C22;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+h4 {
+    color: #0D0C22;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+span
+{
+    color:#EB5757;
+    font-size: small;
+}
+.error-indicator{
+   position: absolute;
+}
+
+.container {
+
+    .input_div {
+       
+        .form-label {
+            color: #4F4F4F;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            margin:  18px 0px  0px 0px;
+
+        }
+        input {
+            height: 42px;
+            width: 100%;
+            padding: 13.5px 0px 12.7px 12.5px;
+            position: relative;
+        }
+        margin: 0px 0px 18px 0px;
+    }
+    .Date {
+        display: flex;
+        justify-content: space-around;
+
+        .form-label {
+            color: #4F4F4F;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            margin:  10px 0px  6px 0px;
+
+           
+        }
+        .outer{
+            border-radius: 6px;
+            border: 1px solid #E7E7E7;
+            background: #FFF;
+        }
+
+        .startdate {
+            border-radius: 6px;
+            border: 1px solid #E7E7E7;
+            background: #FFF;
+
+        }
+
+        .enddate {
+            border-radius: 6px;
+            border: 1px solid #E7E7E7;
+            background: #FFF;
+
+        }
+        gap: 12px;
+    }
+
+    .uploadheader {
+        .form-label {
+            color: #4F4F4F;
+            font-family: Roboto;
+            font-size: 15.4px;
+            font-weight: 400;
+            margin:  10px 0px  6px 0px;
+
+
+
+        }
+
+        .fileupload {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        .selectfile {
+            color: #000;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0px 0px 0px 0px;
+
+        }
+        .dragfile {
+            color: #BDBDBD;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            margin: 0px;
+        }
+        gap: 4px;
+        border: dashed #BDBDBD;
+    }
+    }
+    .footer
+    {
+        display: flex;
+        justify-content: flex-end;
+        gap: 13px;
+}   
+}
